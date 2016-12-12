@@ -2,4 +2,4 @@
 
 require_relative 'config/environment'
 
-run Discolove.application
+run Discolove::Application
