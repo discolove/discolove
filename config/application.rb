@@ -11,5 +11,10 @@ module Discolove
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    require 'es6_module_transpiler/rails'
+
+    config.assets.precompile += ['vendor.js', 'preload-store.js.es6', 'ember_jquery.js']
+
   end
 end

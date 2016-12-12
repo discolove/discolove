@@ -5,10 +5,17 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'ember_jquery', 'preload-store', 'vendor', 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class='debug-eyeline'></div>
+    <noscript data-path="<%= request.env['PATH_INFO'] %>">
+      Application
+      <%= yield %>
+    </noscript>
+    <section id='main'>
+    </section>
+    <%= render :partial => "common/discolove_javascript" %>
   </body>
 </html>

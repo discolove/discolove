@@ -24,6 +24,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+# Ember
+gem 'ember-rails', '0.18.5'
+# gem 'ember-source' # You can specify the Ember.js version you want to use.(such as '~> 1.13.0')
+gem 'ember-source', '2.10.0'
+gem 'barber'
+gem 'babel-transpiler'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

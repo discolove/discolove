@@ -1,0 +1,2 @@
+window.Discolove = {};
+Discolove.SiteSettings = {};
