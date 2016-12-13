@@ -1,0 +1,35 @@
+{
+  "app/assets/javascripts/discolove/components/*.js": {
+    "command": "dcomponent"
+  },
+  "app/assets/javascripts/discolove/lib/*.js": {
+    "command": "dlib"
+  },
+  "app/assets/javascripts/discolove/routes/*.js": {
+    "command": "droute"
+  },
+  "app/assets/javascripts/discolove/controllers/*.js": {
+    "command": "dcontroller"
+  },
+  "app/assets/javascripts/discolove/models/*.js": {
+    "command": "dmodel"
+  },
+  "app/assets/javascripts/discolove/helpers/*.js": {
+    "command": "dhelper"
+  },
+  "app/assets/javascripts/discolove/templates/*.hbs": {
+    "command": "dtemplate"
+  },
+  "app/assets/javascripts/discolove/views/*.js": {
+    "command": "dview"
+  },
+  "app/serializers/*.rb": {
+    "command": "serializer"
+  },
+  "app/services/*.rb": {
+    "command": "service"
+  },
+  "config/*": {
+    "command": "config"
+  }
+}

@@ -20,7 +20,7 @@ export default {
     /*const appEvents = AppEvents.create();
     app.register('app-events:main', appEvents, { instantiate: false });
     injectAll(app, 'appEvents');
-    DiscourseURL.appEvents = appEvents;*/
+    DiscoloveURL.appEvents = appEvents;*/
 
     // app.register('store:main', Store);
     // inject(app, 'store', 'route', 'controller');
@@ -29,18 +29,18 @@ export default {
     app.register('message-bus:main', messageBus, { instantiate: false });
     injectAll(app, 'messageBus');
 
-    const currentUser = Discourse.User.current();
+    const currentUser = Discolove.User.current();
     app.register('current-user:main', currentUser, { instantiate: false });
 
     const topicTrackingState = TopicTrackingState.create({ messageBus, currentUser });
     app.register('topic-tracking-state:main', topicTrackingState, { instantiate: false });
     injectAll(app, 'topicTrackingState');
 
-    const site = Discourse.Site.current();
+    const site = Discolove.Site.current();
     app.register('site:main', site, { instantiate: false });
     injectAll(app, 'site');
 
-    const siteSettings = Discourse.SiteSettings;
+    const siteSettings = Discolove.SiteSettings;
     app.register('site-settings:main', siteSettings, { instantiate: false });
     injectAll(app, 'siteSettings');
 
@@ -61,7 +61,7 @@ export default {
 
     app.register('location:discolove-location', DiscoloveLocation);
 
-    /*const keyValueStore = new KeyValueStore("discourse_");
+    /*const keyValueStore = new KeyValueStore("discolove_");
     app.register('key-value-store:main', keyValueStore, { instantiate: false });
     injectAll(app, 'keyValueStore');
 
