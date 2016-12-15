@@ -24,3 +24,5 @@
 //= require_tree ./discolove/routes
 //= require_tree ./discolove/pre-initializers
 //= require_tree ./discolove/initializers
+
+//= require material

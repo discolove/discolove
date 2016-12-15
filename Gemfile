@@ -31,6 +31,8 @@ gem 'ember-source', '2.10.0'
 gem 'barber'
 gem 'babel-transpiler'
 
+gem 'material_design_lite-sass', '~> 1.2', '>= 1.2.1'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

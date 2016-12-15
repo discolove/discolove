@@ -43,6 +43,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    autoprefixer-rails (6.5.4)
+      execjs
     babel-source (5.8.34)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
@@ -91,6 +93,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    material_design_lite-sass (1.2.1)
+      autoprefixer-rails (~> 6.0)
+      sass (~> 3.3)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -185,6 +190,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  material_design_lite-sass (~> 1.2, >= 1.2.1)
   mini_racer
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
